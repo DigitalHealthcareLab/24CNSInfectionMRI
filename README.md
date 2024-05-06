@@ -5,6 +5,7 @@
 This README contains all information on how to run the pipeline for *Multimodal Deep Learning with MRI-Clinical Integration for Prediction of Prognosis in Central Nervous System Infections*.
 
 Below is the graphical abstract of the study:
+
 ![](/_images/Graphical_Abstract.png)
 
 ## Introduction
@@ -45,7 +46,7 @@ Within directory `4_Multimodal_Fusion`: the vectorized clinical and MRI data are
 
 ### 5. Model Evaluation & Visualization
 ![](/_images/Step_5.png)
-Within directory `5_Model_Evaluation`: the model is evaluated and visualized.
+Within directory `5_Model_Evaluation_Visualization`: the model is evaluated and visualized.
 
 ## Citation
 If you find this work useful, please cite the following paper:
