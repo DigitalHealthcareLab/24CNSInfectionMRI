@@ -7,14 +7,20 @@ This README contains all information on how to run the pipeline for *Multimodal 
 Below is the graphical abstract of the study:
 
 ![](/_images/Graphical_Abstract.png)
-
 ## Introduction
 
 CNS Infections are inflammatory conditions involving the membranes and parenchyma of the CNS including meningitis and encephalitis. Early treatment is often empirical, as mistreatment may lead to possibly fatal side effects such as acute kidney injury and liver damage, thus highlighting the need for early prognosis prediction. Efforts have been made to predict the prognosis in encephalitis; However, most of them have focused on predicting the prognosis associated with a single pathogen and are limited to specific situations. We aim to develop a deep learning model for the early prognosis prediction of CNS inflammation with multimodal data including clinical features and brain imaging data. 
 
 ## Installation
 
-To install the required packages, run the following command:
+To install the pipeline, clone the repository using the following command:
+```bash
+git clone https://github.com/DigitalHealthcareLab/24CNSInfectionMRI.git
+```
+
+To install the required packages for the first step, please refer to the README in the `1_MRI_Preprocessing` folder.
+
+To install the required packages for the remaining steps, run the following command:
 ```bash
 pip install -r requirements.txt
 ```
@@ -31,6 +37,8 @@ __The description of each step is as follows:__
 ### 1. MRI Data Preprocessing
 ![](/_images/Step_1.png)
 Within directory `1_MRI_Preprocessing`: the MRI data is segmented and preprocessed. The MRI data is then saved in the appropriate format for the next step.
+
+__Note that as the preprocessing step utiizes several external libraries, the step has separate requirements from the rest of the pipeline. Please refer to the README in the folder for more information.__
 
 ### 2. Unimodal MRI Model Training
 ![](/_images/Step_2.png)

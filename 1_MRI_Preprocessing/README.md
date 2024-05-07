@@ -1,6 +1,7 @@
 # Overview
+![](/_images/Step_1.png)
 
-This README contains all information on how to run ***BADDIE*** *: Brainpart Anatomical Decomposition with DKTatlas-guided Image Extraction*, a preprocessing pipeline originally put together for *Multimodal Deep Learning with MRI-Clinical Integration for Prediction of Prognosis in Central Nervous System Infections*.
+This README contains all information on how to run [***BADDIE*** *: Brainpart Anatomical Decomposition with DKTatlas-guided Image Extraction*](https://github.com/choiyh592/BADDIE), a preprocessing pipeline originally put together for *Multimodal Deep Learning with MRI-Clinical Integration for Prediction of Prognosis in Central Nervous System Infections*.
 
 ![](/images/pipeline_diagram_v2.png)
 
