@@ -3,13 +3,13 @@
 
 This README contains all information on how to run [***BADDIE*** *: Brainpart Anatomical Decomposition with DKTatlas-guided Image Extraction*](https://github.com/choiyh592/BADDIE), a preprocessing pipeline originally put together for *Multimodal Deep Learning with MRI-Clinical Integration for Prediction of Prognosis in Central Nervous System Infections*.
 
-![](/images/pipeline_diagram_v2.png)
+![](/1_MRI_Preprocessing/images/pipeline_diagram_v2.png)
 
-Above is a diagram for the BADDIE Pipeline. The BADDIE pipeline consists of three main parts for **Resampling**, **Segmentation** and **Brainpart Extraction**. The **Resampling** Part relies entirely on the resampling method used in **lab2im**, and the **Segmentation** Part on FastSurferCNN from **FastSurfer**. Both libraries are linked and cited in the bottom of this README. The **Brainpart Extraction** part relies on our original library **Seg2Seg**(Segmentation to Segments).
+Above is a diagram for the BADDIE Pipeline. The BADDIE pipeline consists of three main parts for **Resampling**, **Segmentation** and **Brainpart Extraction**. The **Resampling** Part relies entirely on the resampling method used in **lab2im**, and the **Segmentation** Part on FastSurferCNN from **FastSurfer**. Both libraries are linked and cited in the bottom of this README. The **Brainpart Extraction** part relies on our original library [**Seg2Seg**(Segmentation to Segments).](https://github.com/choiyh592/Seg2Seg)
 
 The segmentations utilize the [Desikan-Killiany-Tourville(DKT) atlas](https://surfer.nmr.mgh.harvard.edu/fswiki/CorticalParcellation), akin to the segmentation methodology employed in Freesurfer. Below is an image displaying the contours of the DKT atlas. The visualization was created using [Nilearn](https://nilearn.github.io/stable/index.html).
 
-![](/images/dkt_atlas_contours.png)
+![](/1_MRI_Preprocessing/images/dkt_atlas_contours.png)
 
 The input MRI data must be T1-Weighted MRI images in NIFTI(Neuroimaging Informatics Technology Initiative) format, either as .nii or .nii.gz files, or in a compatible format.
 
@@ -35,6 +35,19 @@ You can install all requirements by executing the following code.
 * For Mac : 
 ```bash
 python3 -m pip install -r requirements.mac.txt
+```
+
+#### Note
+To run the pipeline, you need the MRI images to be in NIFTI(Neuroimaging Informatics Technology Initiative) format. The images should be T1-Weighted MRI images. The pipeline is designed to work with NIFTI files, either as .nii or .nii.gz files, or in a compatible format. To convert your DICOM files to NIFTI files, you can use `0_dicom2nifti.py` to convert the DICOM files to NIFTI files. To use this script, you need to modify the following:
+```python
+# Path containing all DICOM files
+dir = Path('Your_DICOM_dir')
+# Output Directory
+opdir = Path('Yout_Output_Dir')
+```
+After modifying the above, you can run the script using the below code.
+```bash
+python3 0_dicom2nifti.py
 ```
 
 ## Usage

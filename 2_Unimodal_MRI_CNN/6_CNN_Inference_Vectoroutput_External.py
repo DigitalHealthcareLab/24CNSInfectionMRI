@@ -27,7 +27,7 @@ tensors_ext_dir = '/home/yhchoi/24BrainMRI_Data/Tensors/External/'
 folds_ext_dir = '/home/yhchoi/24BrainMRI_Data/Labels/External/pathogen_indices_'
 filenames_ext_dir = '/home/yhchoi/24BrainMRI_Data/Labels/External/filename_labels_external.pt'
 ###############################################################################
-
+#TODO Tidy up directories
 seed_everything(random_state)
 y_nlr = torch.load(y_ext_dir)
 y_nlr = torch.tensor([1 if item in labels_to_classify else 0 for item in y_nlr])

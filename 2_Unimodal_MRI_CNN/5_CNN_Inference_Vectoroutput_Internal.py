@@ -22,6 +22,7 @@ device = 'cuda:1' if torch.cuda.is_available() else 'cpu'
 pathogenlist = [0]
 ###############################################################################
 
+#TODO Tidy up directories
 seed_everything(random_state)
 y_nlr = torch.load(y_dir)
 y_nlr = torch.tensor([1 if item in labels_to_classify else 0 for item in y_nlr])

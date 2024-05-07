@@ -7,7 +7,8 @@ This folder contains the code for training and evaluating a CNN model for each b
 # Usage
 
 ## Step 0. Construct internal and external datasets
-- Construct internal and external datasets.
+- Construct internal and external datasets from the outputs of step 1.
+- Specifically, retrieve the indices of the internal and external datasets from the outputs of step 1.
 - Save the datasets to `./data/`.
 Run files in folder `/0_Labels_Recon`.
 
@@ -19,7 +20,7 @@ Run notebook `1_Construct_Fold_Indices.ipynb`.
 ## Step 2. Train CNN
 - Train a CNN model for each brainpart using 4-fold cross-validation.
 - Save trained model to `./models/`.
-Save your configurations to `/home/yhchoi/24CNSInfectionMRI/2_Unimodal_MRI_CNN/src/_cnn_config.py`, then run python file `2_CNNTrain_KFold.py`.
+Save your configurations to `/home/yhchoi/24CNSInfectionMRI/2_Unimodal_MRI_CNN/src/_cnn_config.py`, then run python file `2_CNNTrain_KFold.py`. Repeat with different configurations if model underperforms.
 
 ## Step 3. Evaluate CNN and Save fold with best performance along with test results
 - Evaluate the trained CNN model based on training results.
