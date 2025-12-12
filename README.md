@@ -59,5 +59,7 @@ Within directory `5_Model_Evaluation_Visualization`: the model is evaluated and 
 ## Citation
 If you find this work useful, please cite the following paper:
 ```
-Bo Kyu Choi, Yoonhyeok Choi, Sooyoung Jang, Woo-Seok Ha, Soomi Cho, Kimoon Chang, Beomseok Sohn, Kyung Min Kim, Yu Rang Park, Multimodal deep learning model for prediction of prognosis in central nervous system inflammation, Brain Communications, Volume 7, Issue 3, 2025, fcaf179, https://doi.org/10.1093/braincomms/fcaf179
+Bo Kyu Choi, Yoonhyeok Choi, Sooyoung Jang, Woo-Seok Ha, Soomi Cho, Kimoon Chang, Beomseok Sohn, Kyung Min Kim, Yu Rang Park,
+Multimodal deep learning model for prediction of prognosis in central nervous system inflammation,
+Brain Communications, Volume 7, Issue 3, 2025, fcaf179, https://doi.org/10.1093/braincomms/fcaf179
 ```
